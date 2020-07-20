@@ -20,6 +20,11 @@ The authors [Kensho Hara, Hirokatsu Kataoka, Yutaka Satoh](https://arxiv.org/abs
 - Execute the following command in terminal: <br/>
 ` pip install numpy` <br/>
 
+##### Directory Structure
+
+##### External download
+- You need to dowwload a **`resnet-34_kinetics.onnx`** model from [**here**](https://www.dropbox.com/s/065l4vr8bptzohb/resnet-34_kinetics.onnx?dl=1) and once downloaded drop it inside the model directory of our project
+
 #### Setup :
 1. I have added a video example for testing in `test` directory
 2. If you want to test your own video file be sure to add it in `test` folder 
