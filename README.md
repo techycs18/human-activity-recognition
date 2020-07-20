@@ -41,4 +41,3 @@ python recognise_human_activity.py
 
 #### Acknowledments :
 - [OpenCV's Official Example](https://github.com/opencv/opencv/blob/master/samples/dnn/action_recognition.py) 
-- [Adrian Rosebrock](https://www.pyimagesearch.com/)
