@@ -42,4 +42,4 @@ python recognise_human_activity.py
 #### Acknowledments :
 - Kay et al.’s 2017 paper, [The Kinetics Human Action Video Dataset.](https://arxiv.org/abs/1705.06950)
 - Hara et al.’s 2018 CVPR paper, [Can Spatiotemporal 3D CNNs Retrace the History of 2D CNNs and ImageNet?](https://arxiv.org/abs/1711.09577)
-- [OpenCV's Official Example](https://github.com/opencv/opencv/blob/master/samples/dnn/action_recognition.py) 
+- OpenCV's [Action Recognition Example](https://github.com/opencv/opencv/blob/master/samples/dnn/action_recognition.py) 
