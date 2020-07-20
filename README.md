@@ -1,4 +1,4 @@
-# Whatsapp Notification On Face Recognition
+# Human Activity Recognition
 ### Description :
 This project is made with a perspective of Recognising Human Activities. The human activity recognition model was trained on Kinetics 400 Dataset.
 To learn more about this dataset and model used refer Kay et al.’s 2017 paper, [The Kinetics Human Action Video Dataset.](https://arxiv.org/abs/1705.06950) and Hara et al.’s 2018 CVPR paper, [Can Spatiotemporal 3D CNNs Retrace the History of 2D CNNs and ImageNet?](https://arxiv.org/abs/1711.09577)
@@ -21,6 +21,7 @@ The authors [Kensho Hara, Hirokatsu Kataoka, Yutaka Satoh](https://arxiv.org/abs
 ` pip install numpy` <br/>
 
 ##### Directory Structure
+![](https://github.com/techycs18/human-activity-recognition/blob/master/Direcory%20Stucture.png)
 
 ##### External download
 - You need to dowwload a **`resnet-34_kinetics.onnx`** model from [**here**](https://www.dropbox.com/s/065l4vr8bptzohb/resnet-34_kinetics.onnx?dl=1) and once downloaded drop it inside the model directory of our project
