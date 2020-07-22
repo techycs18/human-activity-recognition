@@ -35,7 +35,13 @@ The authors [Kensho Hara, Hirokatsu Kataoka, Yutaka Satoh](https://arxiv.org/abs
 ```
 python recognise_human_activity.py
 ```
-
+#### Screenshots
+- Playing Keyboard:
+[-](https://github.com/techycs18/human-activity-recognition/blob/master/screenshots/playing_keyboard.png)
+- High Kick:
+[-](https://github.com/techycs18/human-activity-recognition/blob/master/screenshots/high_kick.png)
+- Push Ups:
+[-](https://github.com/techycs18/human-activity-recognition/blob/master/screenshots/pushups.png)
 #### Author :
 - [Chaitanya Sonavane](https://www.linkedin.com/in/chaitanya-sonavane-3766521a0/) [July 2020] 
 
