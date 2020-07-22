@@ -7,7 +7,8 @@ import cv2
 # Parameters class include important paths and constants
 class Parameters:
     def __init__(self):
-        self.CLASSES = open("model/action_recognition_kinetics.txt").read().strip().split("\n")
+        self.CLASSES = open("model/action_recognition_kinetics.txt"
+                            ).read().strip().split("\n")
         self.ACTION_RESNET = 'model/resnet-34_kinetics.onnx'
 #         self.VIDEO_PATH = None
         self.VIDEO_PATH = "test/video1.mp4"
@@ -19,7 +20,8 @@ class Parameters:
 # Initialise instance of Class Parameter
 param = Parameters()
 
-# A Double ended queue to store our frames captured and with time old frames will pop
+# A Double ended queue to store our frames captured and with time
+# old frames will pop
 # out of the deque
 captures = deque(maxlen=param.SAMPLE_DURATION)
 
@@ -49,12 +51,18 @@ while True:
     if len(captures) < param.SAMPLE_DURATION:
         continue
 
-    # now that our captures array is filled we can construct our image blob
-    # We will use SAMPLE_SIZE as height and width for modifying the captured frame
-    imageBlob = cv2.dnn.blobFromImages(captures, 1.0, (param.SAMPLE_SIZE, param.SAMPLE_SIZE),
-                                       (114.7748, 107.7354, 99.4750), swapRB=True, crop=True)
+    # now that our captures array is filled we can
+    # construct our image blob
+    # We will use SAMPLE_SIZE as height and width for
+    # modifying the captured frame
+    imageBlob = cv2.dnn.blobFromImages(captures, 1.0,
+                                       (param.SAMPLE_SIZE,
+                                        param.SAMPLE_SIZE),
+                                       (114.7748, 107.7354, 99.4750),
+                                       swapRB=True, crop=True)
 
-    # Manipulate the image blob to make it fit as as input for the pre-trained OpenCV's
+    # Manipulate the image blob to make it fit as as input
+    # for the pre-trained OpenCV's
     # Human Action Recognition Model
     imageBlob = np.transpose(imageBlob, (1, 0, 2, 3))
     imageBlob = np.expand_dims(imageBlob, axis=0)
